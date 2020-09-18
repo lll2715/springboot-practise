@@ -59,6 +59,19 @@
 		</dependency>
 		<!-- 定时任务 end -->
 
+		<!-- jdbc数据库 start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- jdbc数据库 end-->
+
 	</dependencies>
 
 	<build>
