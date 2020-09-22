@@ -89,4 +89,6 @@ public class SpringbootPractiseApplication {
 		return new org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter(mqReceiver, "consumeMsg");
 	}
 
+
+
 }
