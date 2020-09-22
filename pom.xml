@@ -122,6 +122,19 @@
 		</dependency>
 
 		<!--jms end-->
+
+		<!--batch job start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-batch</artifactId>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>org.hsqldb</groupId>-->
+<!--			<artifactId>hsqldb</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
+		<!--batch job end-->
 	</dependencies>
 
 	<build>
