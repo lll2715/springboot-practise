@@ -79,6 +79,13 @@
 		</dependency>
 		<!--redis end-->
 
+		<!--rabbitmq start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+		<!--rabbitmq end-->
+
 	</dependencies>
 
 	<build>
