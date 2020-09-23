@@ -148,6 +148,14 @@
 			<scope>test</scope>
 		</dependency>
 		<!--secure web end-->
+
+		<!--Hypermedia-Driven RESTful Web Service start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-hateoas</artifactId>
+		</dependency>
+		<!--Hypermedia-Driven RESTful Web Service end-->
+
 	</dependencies>
 
 	<build>
