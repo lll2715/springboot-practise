@@ -156,6 +156,12 @@
 		</dependency>
 		<!--Hypermedia-Driven RESTful Web Service end-->
 
+		<!--jpa start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!--jpa end-->
 	</dependencies>
 
 	<build>
