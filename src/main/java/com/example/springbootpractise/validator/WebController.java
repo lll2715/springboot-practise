@@ -23,7 +23,7 @@ public class WebController implements WebMvcConfigurer {
         return "form";
     }
 
-    @PostMapping("/")
+    @PostMapping("/form")
     public String checkPersonInfo(@Valid PersonForm personForm, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
