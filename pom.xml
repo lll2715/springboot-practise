@@ -202,14 +202,24 @@
 		</dependency>
 		<!--web socket end-->
 
-		<!--cros start-->
+		<!--cors start-->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--cros end-->
+		<!--cors end-->
 
+		<!--soap start-->
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<!--soap end-->
+
+		<!--cache start-->
+
+		<!--cache end-->
 	</dependencies>
 
 	<build>
