@@ -202,6 +202,14 @@
 		</dependency>
 		<!--web socket end-->
 
+		<!--cros start-->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!--cros end-->
+
 	</dependencies>
 
 	<build>

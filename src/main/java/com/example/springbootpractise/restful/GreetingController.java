@@ -1,8 +1,6 @@
 package com.example.springbootpractise.restful;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -19,5 +17,20 @@ public class GreetingController {
     public GreetingEntity sayHi(@RequestParam(value = "user", defaultValue = "World") String user){
 
         return new GreetingEntity(counter.incrementAndGet(),String.format(MESSAGE_TEMPLATE,user));
+    }
+
+
+    @CrossOrigin(origins = "http://localhost:8080")
+    @GetMapping("/greeting")
+    public GreetingEntity greeting(@RequestParam(required = false, defaultValue = "World") String name) {
+        System.out.println("==== get greeting ====");
+        return new GreetingEntity(counter.incrementAndGet(), String.format(MESSAGE_TEMPLATE, name));
+    }
+
+
+    @GetMapping("/greeting-javaconfig")
+    public GreetingEntity greetingWithJavaconfig(@RequestParam(required = false, defaultValue = "World") String name) {
+        System.out.println("==== in greeting ====");
+        return new GreetingEntity(counter.incrementAndGet(), String.format(MESSAGE_TEMPLATE, name));
     }
 }
