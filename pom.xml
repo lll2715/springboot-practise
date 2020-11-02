@@ -236,6 +236,14 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!--mysql end-->
+
+		<!--rest docs start-->
+		<dependency>
+			<groupId>org.springframework.restdocs</groupId>
+			<artifactId>spring-restdocs-mockmvc</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!--rest docs end-->
 	</dependencies>
 
 	<dependencyManagement>
