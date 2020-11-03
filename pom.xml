@@ -247,16 +247,23 @@
 		<!--rest docs end-->
 
 		<!--messaging-gcp-pubsub start -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-gcp-starter-pubsub</artifactId>-->
+<!--		</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.integration</groupId>
-			<artifactId>spring-integration-core</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.integration</groupId>-->
+<!--			<artifactId>spring-integration-core</artifactId>-->
+<!--		</dependency>-->
 		<!--messaging-gcp-pubsub end -->
+
+		<!--webflux start-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<!--webflux end-->
 
 	</dependencies>
 

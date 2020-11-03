@@ -2,6 +2,7 @@ package com.example.springbootpractise;
 
 import com.example.springbootpractise.mq.MqConstant;
 import com.example.springbootpractise.mq.MqReceiver;
+import com.example.springbootpractise.reactive.GreetingWebClient;
 import com.example.springbootpractise.redis.Receiver;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -42,6 +43,8 @@ public class SpringbootPractiseApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootPractiseApplication.class, args);
+		GreetingWebClient gwc = new GreetingWebClient();
+		System.out.println(gwc.getResult());
 	}
 
 	@Bean
