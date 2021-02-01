@@ -15,7 +15,7 @@ public class GreetingController {
 
     @RequestMapping("/sayHi")
     public GreetingEntity sayHi(@RequestParam(value = "user", defaultValue = "World") String user){
-
+        System.gc();
         return new GreetingEntity(counter.incrementAndGet(),String.format(MESSAGE_TEMPLATE,user));
     }
 
